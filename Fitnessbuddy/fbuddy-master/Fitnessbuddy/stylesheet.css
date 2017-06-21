@@ -1,0 +1,55 @@
+figure{
+    width: inherit;
+    height: 
+}
+
+figcaption span{
+    margin-left: 10px;
+}
+
+.frontbillede{
+    width: inherit;
+}
+
+figcaption{
+    
+background-color: #54ba39;
+color: white;
+font-size: 30px;
+font-family: "Oswald";
+
+}
+
+.artikelbilleder{
+    width: 360px;
+    
+}
+
+.col-sm-12{
+    padding-bottom: 2%;
+}
+
+p{
+    font-size: 15px;
+    font-family: "Oswald";
+}
+
+h1{
+    font-family: "Oswald";
+}
+
+.trænsommilitæret{
+    width: inherit;
+    height: 300px;
+    background-color: beige
+}
+
+.coretestbilleder{
+    width:inherit;
+    height: 200px;
+}
+
+.ordquote{
+    font-style: italic;
+    font-weight: bold;
+}

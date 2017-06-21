@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script language="JavaScript">
+    <!--
+    function calculateBmi() {
+    var weight = document.bmiForm.weight.value
+    var height = document.bmiForm.height.value
+    if(weight > 0 && height > 0){	
+    var finalBmi = weight/(height/100*height/100)
+    var finalBmi = finalBmi.toFixed(2)
+    document.bmiForm.bmi.value = finalBmi
+   if(finalBmi < 18.5){
+   document.bmiForm.meaning.value = "Undervægtig"
+   }
+   if(finalBmi > 18.5 && finalBmi < 25){
+   document.bmiForm.meaning.value = "Normalvægtig"
+   }
+   if(finalBmi > 25){
+   document.bmiForm.meaning.value = "Overvægtig"
+   }
+   }
+   else{
+   alert("Formlen blev ikke udfyldt korrekt.")
+   }
+   }
+   //-->
+   </script>
+  </head>
+    
+<body>
+    
+    
+<!-- Navbar -->
+    
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="bmiudregner.html">BMI udregner</a></li>
+        <li><a href="index.html">Fitness Buddy</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fit Tests<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Bip Test</a></li>
+            <li><a href="#">Politi Fysiske Test</a></li>
+            <li><a href="tr%C3%A6n-som-milit%C3%A6ret.html">Forsvarets Fysiske Test</a></li>
+              <li><a href="#">Cuba Test</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Diæter</a></li>
+        <li><a href="bmiudregner.html">BMI udregner</a></li>
+        <li><a href="#">Træningsprogrammer</a></li>
+        <li><a href="#">Ris og Ros</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- BMI udregner -->
+    
+<div class="container">
+<div class="row">
+    <div class="col-sm-6">
+<form name="bmiForm">
+Højde(cm):<br> 
+<input type="text" name="height" size="2"><br><br>
+Vægt(kg):<br>
+<input type="text" name="weight" size="2"><br><br>
+<input type="button" value="Udregn BMI" onClick="calculateBmi()"><br><br>
+Din BMI:<br> 
+<input type="text" name="bmi" size="5"><br><br>
+Resultat:<br>
+<input type="text" name="meaning" size="10"><br>
+</form>
+    </div>
+    
+    <!-- BMI info boks -->
+    
+    <div class="col-sm-6">
+    <div style="width: 400px; background-color: #54ba39;">
+    <h1 style="margin-left: 10px; color: white;">Hvad er BMI?</h1>
+    </div>
+    <p style="text-align: justify; width: 400px;">BMI (Body Mass Index) er en måleenhed brugt af f.eks. læger til at måle sammenhænging mellem din vægt og højde i forhold til de <b>OFFICIELLE</b> forhold.<br><br>
+    
+    Måleenheden tager ikke højde for køn, muskelmasse eller knoglebygning, der bør derfor tages forbehold ved brug af BMI.
+    </p>
+    <div style="width: 400px; background-color: #54ba39;">    
+    <h1 style="margin-left: 10px; color: white;">BMI Oversigt</h1>
+    </div>
+    <p>
+    BMI under 18,5: Undervægtig.<br>
+    BMI 18,5-25: Normalvægtig.<br>
+    BMI 25-30: Overvægtig.<br>
+    BMI over 30: Svært overvægtig.<br>
+    </p>
+    <p>Kilde: <a href="http://altomkost.dk/">www.altomkost.dk</a></p>
+    </div>
+</div>
+</div>
+    
+</body>
+</html>
